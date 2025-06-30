@@ -28,5 +28,11 @@ export const routes: Routes = [
         path: 'cadastro-produtos',
         // Informa qual componente deve ser exibido quando essa rota for acessada
         component: CadastroProduto
+    },
+    {
+        // Define a rota 'cadastro-produtos pot id'
+        path: 'cadastro-produtos/:id',
+        // Informa qual componente deve ser exibido quando essa rota for acessada
+        component: CadastroProduto
     }
 ];
