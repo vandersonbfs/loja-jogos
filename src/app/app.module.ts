@@ -7,6 +7,8 @@ import { MenuComponent } from './componentes/menu/menu.component';
 import { RodapeComponent } from './componentes/rodape/rodape.component';
 import { PainelPrincipalComponent } from './componentes/painel-principal/painel-principal.component';
 import { CadastroProdutoComponent } from './componentes/cadastro-produto/cadastro-produto.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,14 @@ import { CadastroProdutoComponent } from './componentes/cadastro-produto/cadastr
     MenuComponent,
     RodapeComponent,
     PainelPrincipalComponent,
-    CadastroProdutoComponent
+    CadastroProdutoComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule, 
+    FormsModule // <-- Necessário para usar [(ngModel)]
   ],
   providers: [],
   bootstrap: [AppComponent]
